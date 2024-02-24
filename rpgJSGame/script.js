@@ -16,4 +16,5 @@ const healthText = document.querySelector("#healthText");
 const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
-/*Here the use of const means that this value should never change*/
+const monsterHealthText = document.querySelector("#monsterHealth");
+/*Here the use of const means that those value should never change*/
