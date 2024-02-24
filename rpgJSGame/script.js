@@ -61,7 +61,7 @@ function goStore() {
 }
 
 function goCave() {
-    update(locations[2]);
+
 }
 
 function fightDragon() {
