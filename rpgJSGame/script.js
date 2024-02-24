@@ -1,3 +1,4 @@
+// initial values
 let xp = 0;
 let health = 100;
 let gold = 50;
@@ -46,7 +47,7 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
-//Functions can take parameters, which are values that are given to the function each time it runs.
+// functions can take parameters, which are values that are given to the function each time it runs.
 function update(location) {
     button1.innerText = location["button text"][0];
     button2.innerText = location["button text"][1];
@@ -67,7 +68,7 @@ function goStore() {
 }
 
 function goCave() {
-
+    update(locations[2]);
 }
 
 function fightDragon() {
@@ -75,11 +76,15 @@ function fightDragon() {
 }
 
 function buyHealth() {
-
+    gold -= 10; // gold = gold - 10
+    health += 10; // health = health + 10
+    goldText.innerText = gold; // it updates the gold on screen
+    healthText.innerText = health; // it updates the health on screen
 }
 
 function buyWeapon() {
-
+    gold -= 30; //gold = gold - 30
+    goldText.innerText = gold; // it updates the gold on screen
 }
 
 function fightSlime() {
