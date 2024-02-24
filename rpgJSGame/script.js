@@ -25,6 +25,11 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
+//Functions can take parameters, which are values that are given to the function each time it runs.
+function update(location) {
+
+}
+
 // when the button is clicked, myFunction will be called.
 
 function goStore() {
@@ -54,7 +59,7 @@ function buyWeapon() {
 }
 
 function goTown() {
-    text.innerText = "You are in the town square. You see a sign that says Store.";
+    text.innerText = "You are in the town square. You see a sign that says \"Store\"."; // using \"\" wraps the text with double quotes
     button1.innerText = "Go to store";
     button2.innerText = "Go to cave";
     button3.innerText = "Fight dragon";
