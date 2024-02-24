@@ -28,7 +28,9 @@ button3.onclick = fightDragon;
 // when the button is clicked, myFunction will be called.
 
 function goStore() {
-    button1.innerText = "Buy 10 Health (10 gold)";
+    button1.innerText = "Buy 10 health (10 gold)";
+    button2.innerText = "Buy weapon (30 gold)";
+    button3.innerText = "Go to town square";
 }
 
 function goCave() {
