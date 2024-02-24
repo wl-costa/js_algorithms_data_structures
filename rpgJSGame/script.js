@@ -6,7 +6,7 @@ let fighting;
 let monsterHealth;
 let inventory = ["stick"];
 
-/*The Query Selector is indicating the button with the id #button1*/
+// the Query Selector is indicating the button with the id #button1
 const button1 = document.querySelector("#button1");
 const button2 = document.querySelector("#button2");
 const button3 = document.querySelector("#button3");
@@ -17,4 +17,24 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
-/*Here the use of const means that those value should never change*/
+// here the use of const means that those value should never change
+
+// functions are special tools that allow you to run sections of code at specific times.
+// initialize buttons
+button1.onclick = goStore;
+button2.onclick = goCave;
+button3.onclick = fightDragon;
+
+// when the button is clicked, myFunction will be called.
+
+function goStore() {
+
+}
+
+function goCave() {
+
+}
+
+function fightDragon() {
+
+}
