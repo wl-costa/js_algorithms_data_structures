@@ -106,14 +106,14 @@ function buyHealth() {
 }
 
 function buyWeapon() {
-    if (gold >= 30 && currentWeapon < 3) {
+    if (gold >= 30 && currentWeapon < weapons.length - 1) {
         gold -= 30; //gold = gold - 30;
         currentWeapon++; // currentWeapon += 1; / currentWeapon = currentWeapon + 1;
         goldText.innerText = gold; // it updates the gold on screen
         let newWeaponName = weapons[currentWeapon].name; // it updates the weapons index and gets its name property
         text.innerText = "You now have a " + newWeaponName + ".";
         inventory.push(newWeaponName);
-    } else if (currentWeapon === 3) {
+    } else if (currentWeapon === weapons.length - 1) {
         text.innerText = "You already have the most powerful weapon.";
     } else {
         text.innerText = "You do not have enough gold to buy a weapon.";
