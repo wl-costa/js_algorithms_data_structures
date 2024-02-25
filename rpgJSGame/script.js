@@ -95,19 +95,27 @@ function fightDragon() {
 
 function buyHealth() {
     if (gold >= 10) {
-        gold -= 10; // gold = gold - 10
-        health += 10; // health = health + 10
+        gold -= 10; // gold = gold - 10;
+        health += 10; // health = health + 10;
         goldText.innerText = gold; // it updates the gold on screen
         healthText.innerText = health; // it updates the health on screen
+        text.innerText = "You have been cured.";
     } else {
         text.innerText = "You do not have enough gold to buy health.";
     }
 }
 
 function buyWeapon() {
-    if (gold >= 30) {
-        gold -= 30; //gold = gold - 30
+    if (gold >= 30 && currentWeapon < 3) {
+        gold -= 30; //gold = gold - 30;
+        currentWeapon++; // currentWeapon += 1; / currentWeapon = currentWeapon + 1;
         goldText.innerText = gold; // it updates the gold on screen
+        let newWeaponName = weapons[currentWeapon].name; // it updates the weapons index and gets its name property
+        text.innerText = "You now have a " + newWeaponName + ".";
+        inventory.push(newWeaponName);
+        console.log(inventory);
+    } else if (currentWeapon === 3) {
+        text.innerText = "You already have the most powerful weapon.";
     } else {
         text.innerText = "You do not have enough gold to buy a weapon.";
     }
