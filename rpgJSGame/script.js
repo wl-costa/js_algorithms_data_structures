@@ -76,15 +76,23 @@ function fightDragon() {
 }
 
 function buyHealth() {
-    gold -= 10; // gold = gold - 10
-    health += 10; // health = health + 10
-    goldText.innerText = gold; // it updates the gold on screen
-    healthText.innerText = health; // it updates the health on screen
+    if (gold >= 10) {
+        gold -= 10; // gold = gold - 10
+        health += 10; // health = health + 10
+        goldText.innerText = gold; // it updates the gold on screen
+        healthText.innerText = health; // it updates the health on screen
+    } else {
+        text.innerText = "You do not have enough gold to buy health.";
+    }
 }
 
 function buyWeapon() {
-    gold -= 30; //gold = gold - 30
-    goldText.innerText = gold; // it updates the gold on screen
+    if (gold >= 30) {
+        gold -= 30; //gold = gold - 30
+        goldText.innerText = gold; // it updates the gold on screen
+    } else {
+        text.innerText = "You do not have enough gold to buy a weapon.";
+    }
 }
 
 function fightSlime() {
