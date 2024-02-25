@@ -130,6 +130,15 @@ function fightBeast() {
 
 }
 
+// the shift() method on an array removes the first element in the array and returns it.*/
 function sellWeapon() {
-    
+    if (inventory.length > 1) {
+        gold += 15;
+        goldText.innerText = gold;
+        let currentWeapon = inventory.shift(); // since this new currentWeapon variable will be inside an if statement, it will be scoped only to that block of code.
+        text.innerText = "You sold a " + currentWeapon + ".";
+        text.innerText += " In your inventory you have: " + inventory;
+    } else {
+        text.innerText = "Don't sell your only weapon!"
+    }
 }
