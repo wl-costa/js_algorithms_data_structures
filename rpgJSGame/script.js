@@ -113,7 +113,6 @@ function buyWeapon() {
         let newWeaponName = weapons[currentWeapon].name; // it updates the weapons index and gets its name property
         text.innerText = "You now have a " + newWeaponName + ".";
         inventory.push(newWeaponName);
-        console.log(inventory);
     } else if (currentWeapon === 3) {
         text.innerText = "You already have the most powerful weapon.";
     } else {
