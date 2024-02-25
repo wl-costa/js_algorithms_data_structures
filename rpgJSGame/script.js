@@ -56,7 +56,7 @@ const locations = [
         text: "You enter the cave. You see some monsters."
     }
 ];
-let monsters = [
+const monsters = [
     {
         name: "slime",
         level: 2,
