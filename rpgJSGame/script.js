@@ -89,10 +89,6 @@ function goCave() {
     update(locations[2]);
 }
 
-function fightDragon() {
-
-}
-
 function buyHealth() {
     if (gold >= 10) {
         gold -= 10; // gold = gold - 10;
@@ -122,14 +118,6 @@ function buyWeapon() {
     }
 }
 
-function fightSlime() {
-
-}
-
-function fightBeast() {
-
-}
-
 // the shift() method on an array removes the first element in the array and returns it.*/
 function sellWeapon() {
     if (inventory.length > 1) {
@@ -141,4 +129,16 @@ function sellWeapon() {
     } else {
         text.innerText = "Don't sell your only weapon!"
     }
+}
+
+function fightSlime() {
+
+}
+
+function fightBeast() {
+
+}
+
+function fightDragon() {
+
 }
