@@ -56,6 +56,23 @@ const locations = [
         text: "You enter the cave. You see some monsters."
     }
 ];
+let monsters = [
+    {
+        name: "slime",
+        level: 2,
+        health: 15,
+    },
+    {
+        name: "fanged beast",
+        level: 8,
+        health: 60,
+    },
+    {
+        name: dragon,
+        level: 20,
+        health: 300,
+    }
+];
 // here the use of const means that those value should never change
 
 // functions are special tools that allow you to run sections of code at specific times.
