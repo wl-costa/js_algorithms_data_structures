@@ -6,6 +6,7 @@ let currentWeapon = 0;
 let fighting;
 let monsterHealth;
 let inventory = ["stick"];
+let experiencePointsText;
 
 // the Query Selector is indicating the button with the id #button1
 const button1 = document.querySelector("#button1");
