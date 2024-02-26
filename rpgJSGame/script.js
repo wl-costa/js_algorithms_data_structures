@@ -213,3 +213,7 @@ function defeatMonster() {
     xpText.innerText = xp;
     update(locations[4]);
 }
+
+function restart() {
+    
+}
