@@ -10,10 +10,12 @@ As a beginner in the field of web development, I am continuously learning and im
 
 ### Project 1: Javascript RPG Game
 
-- **Description**:
+- **Description**: This project serves to demonstrate fundamental programming concepts in JavaScript by coding a simple(feature side) Role Playing Game. I've learned how to work with arrays, strings, objects, functions, loops, if/else statements, etc.
 
 Technologies Used In This Project:
 - Javascript
+- HTML
+- CSS
 ##
 
 
