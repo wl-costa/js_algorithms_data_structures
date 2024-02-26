@@ -96,6 +96,7 @@ button3.onclick = fightDragon;
 
 // functions can take parameters, which are values that are given to the function each time it runs.
 function update(location) {
+    monsterStats.style.display = "none";
     button1.innerText = location["button text"][0];
     button2.innerText = location["button text"][1];
     button3.innerText = location["button text"][2];
@@ -107,7 +108,6 @@ function update(location) {
 
 function goTown() {
     update(locations[0]);
-    monsterStats.style.display = "none";
 }
 
 
