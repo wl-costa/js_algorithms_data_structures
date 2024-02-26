@@ -199,7 +199,7 @@ function goFight() {
 function attack() {
     text.innerText = "The " + monsters[fighting].name + " attacks.";
     text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
-    health -= monsters[fighting].level;
+    health -= getMonsterAttackValue(monsters[fighting].level);
     monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1; // Math.random() generates a random number from 0 (inclusive) to 1 (exclusive). Math.floor() rounds a given number down to the nearest integer.
     healthText.innerText = health;
     monsterHealthText.innerText = monsterHealth;
@@ -212,6 +212,11 @@ function attack() {
             defeatMonster();
         }
     }
+}
+
+function getMonsterAttackValue(level) {
+    const hit = (level * 5) - (Math.floor(Math.random() * xp)) // this will set the monster's attack to five times their level minus a random number between 0 and the player's xp
+    return hit; // it returns hit value as the function result
 }
 
 function dodge() {
