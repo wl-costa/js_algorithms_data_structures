@@ -1,4 +1,4 @@
-// initial values
+// initial values.
 let xp = 0;
 let health = 100;
 let gold = 50;
@@ -7,7 +7,7 @@ let fighting;
 let monsterHealth;
 let inventory = ["stick"];
 
-// the Query Selector is indicating the button with the id #button1
+// the Query Selector is indicating the button with the id #button1.
 const button1 = document.querySelector("#button1");
 const button2 = document.querySelector("#button2");
 const button3 = document.querySelector("#button3");
@@ -97,7 +97,7 @@ const monsters = [
         health: 300,
     }
 ];
-// here the use of const means that those value should never change
+// here the use of const means that those value should never change.
 
 // functions are special tools that allow you to run sections of code at specific times.
 // initialize buttons
@@ -135,8 +135,8 @@ function buyHealth() {
     if (gold >= 10) {
         gold -= 10; // gold = gold - 10;
         health += 10; // health = health + 10;
-        goldText.innerText = gold; // it updates the gold on screen
-        healthText.innerText = health; // it updates the health on screen
+        goldText.innerText = gold; // it updates the gold on screen.
+        healthText.innerText = health; // it updates the health on screen.
         text.innerText = "You have been cured.";
     } else {
         text.innerText = "You do not have enough gold to buy health.";
@@ -147,8 +147,8 @@ function buyWeapon() {
     if (gold >= 30 && currentWeapon < weapons.length - 1) {
         gold -= 30; //gold = gold - 30;
         currentWeapon++; // currentWeapon += 1; / currentWeapon = currentWeapon + 1;
-        goldText.innerText = gold; // it updates the gold on screen
-        let newWeaponName = weapons[currentWeapon].name; // it updates the weapons index and gets its name property
+        goldText.innerText = gold; // it updates the gold on screen.
+        let newWeaponName = weapons[currentWeapon].name; // it updates the weapons index and gets its name property.
         text.innerText = "You now have a " + newWeaponName + ".";
         inventory.push(newWeaponName);
     } else if (currentWeapon === weapons.length - 1) {
@@ -200,7 +200,11 @@ function attack() {
     text.innerText = "The " + monsters[fighting].name + " attacks.";
     text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
     health -= getMonsterAttackValue(monsters[fighting].level);
-    monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1; // Math.random() generates a random number from 0 (inclusive) to 1 (exclusive). Math.floor() rounds a given number down to the nearest integer.
+    if (isMonsterHit()) {
+        monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1; // Math.random() generates a random number from 0 (inclusive) to 1 (exclusive). Math.floor() rounds a given number down to the nearest integer.
+    } else {
+        text.innerText = " You miss.";
+    }
     healthText.innerText = health;
     monsterHealthText.innerText = monsterHealth;
     if (health <= 0) {
@@ -215,9 +219,14 @@ function attack() {
 }
 
 function getMonsterAttackValue(level) {
-    const hit = (level * 5) - (Math.floor(Math.random() * xp)) // this will set the monster's attack to five times their level minus a random number between 0 and the player's xp
+    const hit = (level * 5) - (Math.floor(Math.random() * xp)) // this will set the monster's attack to five times their level minus a random number between 0 and the player's xp.
     return hit > 0 ? hit : 0; // it returns hit value as the function result
     // the ternary operator is a conditional operator and can be used as a one-line if-else statement. the syntax is: condition ? expressionIfTrue : expressionIfFalse.
+}
+
+function isMonsterHit() {
+    return Math.random() > .2 || health < 20; // the player should hit if either Math.random() > .2 or if the player's health is less than 20.
+    // it returns a boolean true if conditions are met or false if they're not.
 }
 
 function dodge() {
