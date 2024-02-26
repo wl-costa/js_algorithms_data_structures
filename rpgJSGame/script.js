@@ -245,3 +245,5 @@ function restart() {
     xpText.innerText = xp;
     goTown();
 }
+
+// all features have been completed
