@@ -185,8 +185,15 @@ function attack() {
     monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1; // Math.random() generates a random number from 0 (inclusive) to 1 (exclusive). Math.floor() rounds a given number down to the nearest integer.
     healthText.innerText = health;
     monsterHealthText.innerText = monsterHealth;
+    if (health <= 0) {
+        lose();
+    }
 }
 
 function dodge() {
 
+}
+
+function lose() {
+    
 }
