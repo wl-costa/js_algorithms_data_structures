@@ -266,3 +266,4 @@ function restart() {
 }
 
 // all features have been completed
+// improvements done
