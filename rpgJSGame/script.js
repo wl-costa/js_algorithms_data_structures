@@ -71,7 +71,7 @@ const locations = [
         name: "lose",
         "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
         "button functions": [restart, restart, restart],
-        text: "You died"
+        text: "You died. &#x2620 "
     }
 ];
 const monsters = [
