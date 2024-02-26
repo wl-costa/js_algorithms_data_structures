@@ -216,7 +216,8 @@ function attack() {
 
 function getMonsterAttackValue(level) {
     const hit = (level * 5) - (Math.floor(Math.random() * xp)) // this will set the monster's attack to five times their level minus a random number between 0 and the player's xp
-    return hit; // it returns hit value as the function result
+    return hit > 0 ? hit : 0; // it returns hit value as the function result
+    // the ternary operator is a conditional operator and can be used as a one-line if-else statement. the syntax is: condition ? expressionIfTrue : expressionIfFalse.
 }
 
 function dodge() {
