@@ -216,6 +216,10 @@ function attack() {
             defeatMonster();
         }
     }
+    if (Math.random() <= .1) {
+        text.innerText += " Your " + inventory.pop() + " breaks." // used inventory.pop(), which will remove the last item in the array AND return it so it appears in the string.
+        currentWeapon--;
+    }
 }
 
 function getMonsterAttackValue(level) {
