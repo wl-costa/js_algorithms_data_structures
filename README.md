@@ -18,6 +18,16 @@ Technologies Used In This Project:
 - CSS
 ##
 
+### Project 2: Calorie Counter
+
+- **Description**: In this calorie counter project, I've learned how to validate user input, perform calculations based on that input, and dynamically update the interface to display the results. I also learned basic regular expressions, template literals, the addEventListener() method, etc.
+
+Technologies Used In This Project:
+- Javascript
+- HTML
+- CSS
+##
+
 
 
 
