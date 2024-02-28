@@ -32,3 +32,11 @@ input,
 select {
   min-height: 24px;
 }
+
+fieldset,
+label,
+button,
+input,
+select {
+  margin-bottom: 10px;
+}
