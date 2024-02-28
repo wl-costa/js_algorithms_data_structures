@@ -19,3 +19,16 @@ h1,
 .output {
   margin: 20px auto;
 }
+
+button {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #fecc4c;
+  border: 2px solid #feac32;
+}
+
+button,
+input,
+select {
+  min-height: 24px;
+}
