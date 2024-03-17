@@ -6,9 +6,10 @@ const addEntryButton = document.getElementById('add-entry');
 const clearButton = document.getElementById('clear');
 const output = document.getElementById('output');
 let isError = false;
+
 /* even though I set an input element to be a number, JavaScript receives a string value. 
 So I needed to write a function to clean the string value and ensure I had a number. */
-function cleanInputString(str) {
+/*function cleanInputString(str) {
     const strArray = str.split(''); // the split() method splits a string into an array of substrings, and returns the new array.
     let cleanStrArray = [];
     for (let i = 0; i < strArray.length; i++) {
@@ -16,4 +17,11 @@ function cleanInputString(str) {
             cleanStrArray.push(strArray[i]);
         }
     }
+}
+*/
+/* while looping through the string works, creating a new array is inefficient for memory and runtime performance.
+Instead, we can use Regular Expressions(referred to as "regex") to match specific characters.*/
+function cleanInputString(str) {
+  const regex = /[+-\s]/g;
+  return str.replace(regex, ""); //.replace() method which allows you to replace characters in the string with another string.
 }
