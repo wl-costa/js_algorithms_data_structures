@@ -25,3 +25,7 @@ function cleanInputString(str) {
   const regex = /[+-\s]/g;
   return str.replace(regex, ""); //.replace() method which allows you to replace characters in the string with another string.
 }
+
+function isInvalidInput(str) {
+
+}
