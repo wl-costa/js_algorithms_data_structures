@@ -22,10 +22,11 @@ So I needed to write a function to clean the string value and ensure I had a num
 /* while looping through the string works, creating a new array is inefficient for memory and runtime performance.
 Instead, we can use Regular Expressions(referred to as "regex") to match specific characters.*/
 function cleanInputString(str) {
-  const regex = /[+-\s]/g;
-  return str.replace(regex, ""); //.replace() method which allows you to replace characters in the string with another string.
+    const regex = /[+-\s]/g;
+    return str.replace(regex, ""); // .replace() method which allows you to replace characters in the string with another string.
 }
 
 function isInvalidInput(str) {
-
+    // the following regex will match 'e' and 'E'
+    const regex = /e/i; // the e in a number input can also be an uppercase E. Regex has a flag for this, however – the i flag, which stands for "insensitive".
 }
