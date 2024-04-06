@@ -1,50 +1,36 @@
 # JavaScript Algorithms and Data Structures
 
-This repository showcases my journey learning JavaScript Algorithms and Data Structures. The projects here demonstrate my progress and learning in the field of web development, specifically focusing on using JavaScript to make pages interactive.
+Este repositório apresenta minha jornada de aprendizado em Algoritmos e Estruturas de Dados em JavaScript. Os projetos aqui demonstram meu progresso e aprendizado no campo do desenvolvimento web, com foco específico em usar JavaScript para tornar as páginas interativas.
 
-## Introduction
+# Projetos
 
-As a beginner in the field of web development, I am continuously learning and improving my skills. This repository serves as a portfolio to showcase my projects and the progress I have made in using JavaScript.
+### Projeto 1: <a href="https://github.com/wl-costa/js_algorithms_data_structures/tree/main/rpgJSGame">Javascript RPG Game ⚔️🛡️</a>
 
-## Projects
+- **Descrição**: Este projeto serve para demonstrar conceitos fundamentais de programação em JavaScript, codando um jogo de RPG bem simples. Aprendi a trabalhar com arrays, strings, objetos, funções, loops, instruções if/else, etc.
 
-### Project 1: Javascript RPG Game
+Tecnologias utilizadas nesse projeto:
 
-- **Description**: This project serves to demonstrate fundamental programming concepts in JavaScript by coding a simple(feature side) Role Playing Game. I've learned how to work with arrays, strings, objects, functions, loops, if/else statements, etc.
-
-Technologies Used In This Project:
-- Javascript
-- HTML
-- CSS
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ##
 
-### Project 2: Calorie Counter
+### Projeto 2: <a href="https://github.com/wl-costa/js_algorithms_data_structures/tree/main/calorieCounter">Calorie Counter 🔥</a> - EM CONSTRUÇÃO
 
-- **Description**: In this calorie counter project, I've learned how to validate user input, perform calculations based on that input, and dynamically update the interface to display the results. I also learned basic regular expressions, template literals, the addEventListener() method, etc.
+- **Descrição**: Neste projeto de contador de calorias, aprendi a como validar a entrada do usuário, realizar cálculos com base nessa entrada e atualizar dinamicamente a interface para exibir os resultados.
 
-Technologies Used In This Project:
-- Javascript
-- HTML
-- CSS
+Tecnologias utilizadas nesse projeto:
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ##
 
+### Conclusão
 
+Estou animado para continuar minha jornada no desenvolvimento web e ansioso para criar mais projetos que demonstrem minhas habilidades.
 
+Se você tiver algum feedback ou sugestão, sinta-se à vontade para entrar em contato comigo.
 
-
-
-
-
-
-
-
-
-
-## Conclusion
-
-I am excited to continue my journey in web development and look forward to creating more projects that demonstrate my skills.
-
-If you have any feedback or suggestions, please feel free to reach out to me.
-
-Thank you for visiting my repository!
+Obrigado por visitar meu repositório! 🌟
 
